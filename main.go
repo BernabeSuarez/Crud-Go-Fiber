@@ -44,7 +44,7 @@ func main() {
   if err != nil {
     panic(err)
   }
-   fmt.Println("You successfully connected to MongoDB!",client)
+   fmt.Println("You successfully connected to MongoDB!")
 
 
    coll := client.Database("Go-mongo").Collection("tasks")
