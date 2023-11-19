@@ -3,7 +3,7 @@ package models
 import "go.mongodb.org/mongo-driver/bson/primitive"
 
 type Task struct {
-	Id primitive.ObjectID `json:"_id" bson:"_id"` //data para recuperar el id automatico de mongo
+	Id primitive.ObjectID `json:"_id,omitempty" bson:"_id,omitempty"` //data para recuperar el id automatico de mongo
 	Task string `json:"task"`
 	IsCompleted bool `default:"false"`
 }
